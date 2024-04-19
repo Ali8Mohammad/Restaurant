@@ -11,10 +11,10 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <div class="nav-bar d-flex justify-space-between">
             <nav class="nav d-flex justify-space-between container">
-            <h1>Mealify</h1>
+            <h2 class="h1">Mealify</h2>
                 <ul class="links-nav transition-3 d-flex justify-space-around list-none">
                     <li class="link-nav"><a class="text-decoration-none transition-3" href="#home">Home</a></li>
                     <li class="link-nav"><a class="text-decoration-none transition-3" href="#chefs">Chefs</a></li>
@@ -23,6 +23,24 @@
                 </ul>
                     <i class="fa-solid fa-moon"></i>
             </nav>
+        </div>
+        <div class="nav-2">
+            <div class="container"> 
+                    <h2 class="h1">Mealify</h2>
+            <div class="navbar-2 p-relative">
+                <span class="icons-nav d-flex flex-direction-column p-absolute">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <ul class="links-nav2 transition-3">
+                    <li class="link-nav"><a class="text-decoration-none transition-3" href="#home">Home</a></li>
+                    <li class="link-nav"><a class="text-decoration-none transition-3" href="#chefs">Chefs</a></li>
+                    <li class="link-nav"><a class="text-decoration-none transition-3" href="#gallery">Gallery</a></li>
+                    <li class="link-nav"><a class="text-decoration-none transition-3" href="#contact">Contact</a></li>            
+                </ul>
+            </div>
+        </div>
         </div>
         <div class="hero d-flex justify-space-between container">
             <div class="hero-text">
@@ -42,7 +60,7 @@
                 <img  class="hero-image" src="./Assets/Img/hero-img.png" alt="">
         </div>
     </header>
-    <section class="chefs-section">
+    <section class="chefs-section" id="chefs">
         <div class="container">
             <div class="title-section d-flex flex-direction-column">
                 <h2>CHEFS</h2>
@@ -53,10 +71,10 @@
                     <div class="card-hover d-flex">
                         <img src="./Assets/Img/chefs-1.jpg" alt="our-chef">
                         <div class="social-card ">
-                            <i class="fa-brands transition-3 fa-twitter"></i>
-                            <i class="fa-brands transition-3 fa-facebook-f"></i>
-                            <i class="fa-brands transition-3 fa-instagram"></i>
-                            <i class="fa-brands transition-3 fa-linkedin"></i>
+                            <a href="#"><i class="fa-brands transition-3 fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands transition-3 fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands transition-3 fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands transition-3 fa-linkedin"></i></a>
                         </div>
                     </div>
                     <div>
@@ -100,7 +118,7 @@
                 </div>
             </div>
     </section>
-    <section class="second-section text-align-center">
+    <section class="second-section text-align-center" id="gallery">
         <div class="container">
             <div class="title-section d-flex flex-direction-column">
                 <h2>Gallery</h2>
@@ -174,7 +192,7 @@
             </div>
         </div>
     </section>
-    <section class="third-section">
+    <section class="third-section" id="contact">
         <div class="container d-flex flex-direction-column">
 
             <div class="title-section d-flex flex-direction-column">
@@ -183,17 +201,106 @@
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.504687811186!2d35.77040757420454!3d35.51652393900689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1526ad1273a9491f%3A0xc5fb1b1654404a50!2sFRATELLI!5e0!3m2!1sen!2s!4v1713523483493!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="contact-info d-flex">
-                <div class="info d-flex">
+                <div class="info d-flex justify-content-start">
                     <i class="fa-regular fa-map"></i>
-                    <h3>Our Address</h3>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <div>
+                        <h3>Our Address</h3>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                    </div>
+                </div>
+                <div class="info d-flex justify-content-start">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div>
+                        <h3>Email Us</h3>
+                        <p>contact@example.com</p>
+                    </div>
+                </div>
+                <div class="info d-flex justify-content-start">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p>+1 5589 55488 55</p>
+                    </div>
+                </div>
+                <div class="info d-flex justify-content-start">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <div>
+                        <h3>Opening Hours</h3>
+                        <p><strong>Mon-Sat</strong>: 11AM - 23PM; <strong>Sunday</strong> : Closed</p>
+                    </div>
                 </div>
             </div>
-            <form action="">
-                
+            <form class="form d-flex justify-space-between" action="">
+                <input class="name" type="text" name="your name" placeholder="Your Name"/>
+                <input class="email" type="email" name="email" placeholder="Email"/>
+                <input type="text" name="subject" placeholder="Subject"/>
+                <textarea name="Message" cols="30" rows="5" placeholder="Message"></textarea>
+                <button type="submit">Send Message</button>
             </form>
         </div>
     </section>
+    <footer class="footer-section">
+        <div class="container footer d-flex">
+            <div class="footer-contact">
+                <div class="d-flex justify-content-start">
+                    <img src="./Assets/Img/favicon.png" alt="">
+                    <h2 class="h1">Mealify</h2>
+                </div>
+                <p>Mealify is a restaurant landing page that offers a delicious dining experience to its customers.</p>
+                <h3 class="text-align-center">Social Media</h3>
+                <ul class="links-footer d-flex">
+                    <li><a href="#"><i class="fa-brands transition-3 fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands transition-3 fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands transition-3 fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands transition-3 fa-linkedin"></i></a></li>
+                </ul>        
+            </div>
+            <div class="footer-subscribe d-flex flex-direction-column">
+                <div class="d-flex">
+                    <div class="d-flex justify-content-start">
+                        <h2>Subscribe our Newsletter</h2>
+                        <p>Don't miss out on our latest menu updates and exclusive offers - join our newsletter today and stay up-to-date with all things Mealify!</p>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <input name="Email" type="email" placeholder="Enter Your Email Address"/>
+                        <button class="btn-red" type="submit" name="Subscribe"><i class="fa-regular fa-envelope"></i> Subscribe</button>
+                    </div>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <div class="lists d-flex justify-content-start">
+                        <ul class="d-flex flex-direction-column align-items-start justify-content-start">
+                            <li><a href="">Menu</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Testimonial</a></li>
+                        </ul>
+                        <ul class="list">
+                            <li><a href="">Promo</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Our Partners</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-touch d-flex flex-direction-column align-items-start">
+                <h3>Get in Touch</h3>
+                <div class="contact-footer d-flex flex-direction-column">
+                    <div class="d-flex">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>contact@example.com</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+1 5589 55488 55</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
