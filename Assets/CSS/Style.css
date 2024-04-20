@@ -661,6 +661,11 @@ footer h2 {
     margin: 10px 0;
 }
 /* Media Query */
+@media screen and (min-width: 991px) { 
+    .nav-2 {
+        display: none;
+    }
+}
 @media screen and (max-width: 990px) {
     .container {
         width: 700px;
