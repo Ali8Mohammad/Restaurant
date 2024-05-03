@@ -762,6 +762,7 @@ footer h2 {
             align-items: center !important;
             height: max-content !important;
             padding: 100px 0;
+            flex-direction: column-reverse;
             
         }
         .hero-text {
