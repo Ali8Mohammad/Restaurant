@@ -104,18 +104,18 @@ ul {
     position: fixed;
     z-index: 1;
     width: 100%;
+    display: none;
 }
 .nav-2 {
     background-color: white;
     position: fixed;
+    padding: 20px !important;
     z-index: 1;
     width: 100%;
+    display: none;
 }
 .nav-2 i {
     font-size: 30px;
-}
-.nav-2 {
-    padding: 10px 0;
 }
 .icons-nav {
     justify-content: end;
@@ -143,15 +143,20 @@ ul {
     width: 100%;
 }
 .links-nav2 {
-    position: absolute;
-    left: 50%;
-    top: 13px;
     background-color: white;
-    width: 50%;
+    width: 1100px;
     display: none;
+    position: absolute;
+    top: 170%;
+    right: -100px !important;
+    padding:0 120px;
 }
-.icons-nav:hover ul,
-.icons-nav:focus ul {
+.navbar-2 {
+    position: relative;
+    align-items: baseline;
+}
+.nav-2:hover ul,
+.nav-2:focus ul {
     display: flex;
 }
 .links-nav2::before {
@@ -164,7 +169,13 @@ ul {
 
 }
 .navbar-2 li {
+    width: 100%;
+    padding: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+    transition: .3s ease-in-out;
+}
+.navbar-2 li:hover {
+    padding-left: 20px;
 }
 .nav {
     padding: 20px;
@@ -181,13 +192,11 @@ ul {
     content: ".";
     color: #ce1212;
 }
-.links-nav {
-    width: 350px;
-}
 .link-nav a {
     color: #7f7f90;
 }
 .link-nav {
+    width: 350px;
     position: relative;
     padding: 5px;
 }
@@ -667,16 +676,26 @@ footer h2 {
     margin: 10px 0;
 }
 /* Media Query */
-@media screen and (min-width: 991px) { 
-    .nav-2 {
-        display: none;
+@media screen and (min-width:1200px) {
+    .nav-bar {
+        display: block;
     }
 }
-@media screen and (max-width: 990px) {
+@media screen and (min-width:1025px) and (max-width:1199px) {
     .container {
-        width: 700px;
+        width: 900px;
     }
-    .nav-bar {
-        display: none;
+    .nav-2 {
+        display: block;
     }
+    .meals {
+        width: calc(calc(100% - var(--gap) ) / 3);
+    }
+    
+}
+    @media screen and (min-width:769px) and (max-width:1024px) {
+}
+    @media screen and (min-width:481px) and (max-width:768px) {
+}
+    @media screen and (min-width:320px) and (max-width:480px) {
 }
