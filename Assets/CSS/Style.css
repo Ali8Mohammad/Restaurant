@@ -23,6 +23,7 @@ ul {
     --i: black;
     --h1-color: #212529;
     --icons-nav-color: #0000008c;
+    --box-shadow:  0 0 10px rgba(0, 0, 0, 0.185);
 }
 .dark-mode {
     --main-color: black ;
@@ -33,6 +34,7 @@ ul {
     --i: white !important;
     --h1-color: white;
     --icons-nav-color: white;
+    --box-shadow: 0 0 10px rgba(255, 255, 255, 0.397) !important;
 }
 body {
     background-color: var(--main-color);
@@ -386,7 +388,7 @@ body {
 }
 .card {
     width: 30%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+    box-shadow: var(--box-shadow);
     border-radius: 5px;
     height: 250px;
 }
