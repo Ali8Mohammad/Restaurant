@@ -626,6 +626,8 @@ footer h2 {
 .links-footer li{
     padding: 8px;
     color: white;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 1px solid white;
     margin: 0 7px;
@@ -860,9 +862,12 @@ footer h2 {
             right: -50px !important;
         }
         .card {
-            width: 100%;
+            width: 90% !important;
             height: 600px;
             margin: 20px;
+        }
+        .card:hover{
+            width: 100% !important;
         }
         .meals {
             width: 100%;
